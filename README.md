@@ -6,8 +6,8 @@ The project is also used to discover and get familiar with biases.
 
 ### Structure of the project
 * data_raw -> contains the raw data
-  * export_2019.csv
-  * page_data.csv
+  * export_2019.csv -> data set with pages of politicians, the politician's country and the revision id
+  * page_data.csv -> data set with countries, region and population
 * data_clean -> contains cleaned up data as well as data that was excluded from the analysis
   * countries-without-match.csv -> cleaned up data used for analysis
   * en-wikipedia-politicians_with_article_quality.csv -> intermediate results containing ORES predictions
@@ -75,30 +75,35 @@ The results can be found in the folder `results`
 
 * countries-coverage-bottom-10.csv
 Ten countries with the lowest ratio of articles (of politicians of that country) to number of inhabitants
+
 | country | articles/population |
 |---------|---------------------|
 | lowercase name | num_articles/num_inhabitants |
 
 * countries-coverage-top-10.csv
 Ten countries with the highest ratio of articles to number of inhabitants
+
 | country | articles/population |
 |---------|---------------------|
 | lowercase name | num_articles/num_inhabitants |
 
 * countries-relative-quality-bottom-10.csv
 Ten countries with the lowest ratio of high quality articles to all articles (of that country)
+
 | country | hq_article_rate |
 |---------|---------------------|
 | lowercase name | num_hq_articles/num_articles |
 
 * countries-relative-quality-top-10.csv
 Ten countries with the highest ratio of high quality articles to all articles (of that country)
+
 | country | hq_article_rate |
 |---------|---------------------|
 | lowercase name | num_hq_articles/num_articles |
 
 * region_coverage.csv
 Regions with the ratio of articles (of politicians of that region) to number of inhabitants
+
 | region | articles/population |
 |---------|---------------------|
 | uppercase name | num_articles/num_inhabitants |
@@ -106,6 +111,7 @@ Regions with the ratio of articles (of politicians of that region) to number of 
 
 * region_relative_quality.csv
 Regions with and the ratio of high quality articles to all articles (of that country)
+
 | region | hq_article_rate |
 |---------|---------------------|
 | uppercase name | num_hq_articles/num_articles |
